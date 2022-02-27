@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Discord Dual</title>
+     <link rel="stylesheet" href="/styles/stylesheet.css">
+     <script src="https://www.lactame.com/lib/image-js/0.21.2/image.min.js"></script>
+     <script defer src="/scripts/index.js"></script>
+</head>
+<body>
+     <div class="prm-container" id="initial-screen">
+          <input type="file" style="display: none;" id="fileInput" accept="image/png, image/jpeg">
+          <div class="inptBtn" onclick="fileInput.click()">
+               Upload A Banner
+          </div>
+     </div>
+     <div id="banner-editor" style="display: none;">
+          <div class="editor-container">
+               <img id="editor-image" draggable="false" ondragstart="return false">
+               <div id="editor-mask">
+                    <div class="mask-circle">
+
+                    </div>
+                    <div class="mask-banner">
+
+                    </div>
+               </div>
+          </div>
+          <input type="range" min="0" max="100" value="0" class="slider" id="topHeight">
+          <div class="inptBtn" style="margin-top: 1rem;" onclick="saveBanner()">
+               Save
+          </div>
+     </div>
+</body>
+</html>

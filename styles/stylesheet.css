@@ -1,0 +1,86 @@
+html, body {
+     width: 100%;
+     height: 100%;
+     background: #2f3136;
+     margin: 0 auto;
+     color: #fff;
+     font-family: Arial, Helvetica, sans-serif;
+     overflow: hidden;
+}
+
+.prm-container {
+     height: 100%;
+     width: 100%;
+     display: grid;
+     place-items: center;
+}
+
+#banner-editor {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.slider {
+     width: 60vw;
+     margin-top: 2rem;
+}
+
+.inptBtn {
+     width: 150px;
+     height: 43px;
+     background: #202225;
+     display: grid;
+     place-items: center;
+     cursor: pointer;
+     user-select: none;
+     border: #18191c solid 2px;
+     border-radius: 4px;
+     transition: all .2s;
+}
+
+.inptBtn:hover {
+     background: #18191c;
+}
+
+#editor-image {
+     width: 50vw;
+     user-select: none;
+     position: absolute;
+     z-index: 0;
+}
+
+#editor-mask {
+     width: 100%;
+     aspect-ratio: 2.5;
+     z-index: 999;
+     position: relative;
+}
+
+.mask-banner {
+     width: 100%;
+     aspect-ratio: 2.5;
+     border: .5rem solid #ffffff;
+     box-sizing: border-box;
+     box-shadow: #18191c 2px 2px 10px;
+}
+
+.mask-circle {
+     box-shadow: #000000 0px 0px 20px;
+     top: 100%;
+     transform: translateY(-50%) translateX(var(--picOffset));
+     position: absolute;
+     width: var(--picWidth);
+     height: var(--picHeight);
+     aspect-ratio: 2.5;
+     border: .5rem solid #ffffff;
+     border-radius: 100%;
+     box-sizing: border-box; 
+}
+
+* {
+     user-select: none;
+}

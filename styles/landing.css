@@ -1,0 +1,50 @@
+.select-options {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+     animation: slide-in 1s ease-in-out;
+}
+
+.options {
+     display: grid;
+     width: 60%;
+     grid-template-columns: repeat(2, 1fr);
+}
+
+.options > div {
+     text-align: center;
+}
+
+p {
+     font-size: 1.2em;
+}
+
+@keyframes slide-in {
+     from {
+          opacity: 0;
+          transform: translateY(20%);
+     }
+     to {
+          opacity: 1;
+          transform: translateY(0%);
+     }
+}
+
+.showcase {
+     box-shadow: rgba(0, 0, 0, 0.288) 0px 0px 10px;
+     border-radius: 15px;
+     transform: scale(1);
+     transition: all .2s;
+}
+
+.showcase:hover {
+     transform: scale(1.05);
+}
+
+.showcase {
+     height: 350px;
+     cursor: pointer;
+}
