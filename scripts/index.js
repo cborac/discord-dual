@@ -5,9 +5,9 @@
 // But sadly, IDE won't just recognize its type. So let's define it with JSDOC comments
 
 if (new URLSearchParams(window.location.search).get("type") == "profile") {
-     import("/scripts/profile_ratios.js")
+     import("scripts/profile_ratios.js")
 } else {
-     import("/scripts/popup_ratios.js")
+     import("scripts/popup_ratios.js")
 }
 
 /**
