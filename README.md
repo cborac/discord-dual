@@ -2,7 +2,7 @@
 
 Make your favorite photo fit your banner & profile picture, I made this to reverse-engineer things & image manipulation in pure js
 
-[Here's the site](https://sardonyx.me/discord-dual/)
+[Here's the site](https://boraciner.com/discord-dual/)
 
 ## Examples
 <div align="center">
